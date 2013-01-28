@@ -1,0 +1,78 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head >
+
+<title>未命名頁面</title>
+
+ 
+
+<script type="text/javascript">
+/**********************************************
+
+* Ajax Includes script 
+
+***********************************************/
+
+ 
+
+//To include a page, invoke ajaxinclude("afile.htm") in the BODY of page 
+
+//Included file MUST be from the same domain as the page displaying it.
+
+
+function ajaxinclude(url) { 
+var url=url;
+//var url=url;
+
+var page_request = false; 
+
+if (window.XMLHttpRequest){ // if Mozilla, Safari etc 
+page_request = new XMLHttpRequest() 
+}else if (window.ActiveXObject){ // if IE 
+	try { 
+	page_request = new ActiveXObject("Msxml2.XMLHTTP") 
+	}catch (e){ 
+	page_request = new ActiveXObject("Microsoft.XMLHTTP")
+}
+} 
+	alert("page_request1");
+	alert(url);
+	page_request.open('GET', url, true) //get page synchronously 
+	alert(url);
+	//page_request.send(null) 
+	alert("writecontent1");
+	writecontent(page_request) 
+	alert(url);
+}
+
+ 
+
+function writecontent(page_request){ 
+	alert("writecontent2");
+	if (window.location.href.indexOf("http")==-1 || page_request.status==200) 
+	
+	//document.write(page_request.responseText) 
+	alert(page_request.responseText);
+	document.getElementById("sa").innerHTML=page_request.responseText
+}
+
+ 
+
+</script> 
+
+</head> 
+
+<body>
+
+<input onclick="ajaxinclude('index.html') " type="button" value="打开">
+
+<div id="sa">
+</div>
+
+ 
+
+</body> 
+
+ 
+
+</html>

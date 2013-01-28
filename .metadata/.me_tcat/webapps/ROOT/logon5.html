@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<META http-equiv=content-type content="text/html; charset=utf-8">
+<title>基于jQuery弹出层插件thickbox-懒人建站-http://www.51xuediannao.com</title>
+<meta name="keywords" content="jquery特效,JS代码,js特效代码大全,导航菜单代码,焦点幻灯片,企业网页设计欣赏" />
+<meta name="description" content="懒人建站为您提供-基于jquery特效，jquery弹出层效果，js特效代码大全，JS广告代码，导航菜单代码，下拉菜单代码和jquery焦点图片代码。" />
+
+<script src="js/jquery-1.4.3.min.js" type="text/javascript"></script>
+<script src="js/thickbox-compressed.js" type="text/javascript"></script>
+<link href="css/thickbox.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+/**********************************************
+
+* Ajax Includes script 
+
+***********************************************/
+
+ 
+
+//To include a page, invoke ajaxinclude("afile.htm") in the BODY of page 
+
+//Included file MUST be from the same domain as the page displaying it.
+
+
+function ajaxinclude(url) { 
+var url=url;
+//var url=url;
+
+var page_request = false; 
+
+if (window.XMLHttpRequest){ // if Mozilla, Safari etc 
+page_request = new XMLHttpRequest() 
+}else if (window.ActiveXObject){ // if IE 
+	try { 
+	page_request = new ActiveXObject("Msxml2.XMLHTTP") 
+	}catch (e){ 
+	page_request = new ActiveXObject("Microsoft.XMLHTTP")
+}
+} 
+	alert("page_request1");
+	alert(url);
+	page_request.open('GET', url, true) //get page synchronously 
+	alert(url);
+	page_request.send(null) 
+	alert("writecontent1");
+	writecontent(page_request) 
+	alert(url);
+}
+function writecontent(page_request){ 
+	alert("writecontent2");
+	if (window.location.href.indexOf("http")==-1 || page_request.status==200) 
+	
+	//document.write(page_request.responseText) 
+	alert(page_request.responseText);
+	document.getElementById("myOnPageContent").innerHTML=page_request.responseText
+}
+</script> 
+</head>
+<body>
+
+<input alt="http://www.baidu.com?height=400&width=600" title="点击弹出隐藏层" class="thickbox" type="button" value="点击弹出隐藏层" />   
+<a href="#TB_inline?height=700&width=800&inlineId=myOnPageContent" target = "wunai"  title="点击弹出隐藏层" class="thickbox" type="button">点击弹出隐藏层</a>
+<a href="http://www.baidu.com?KeepThis=true&TB_iframe=true&height=400&width=600" title="点击弹出隐藏层" class="thickbox" type="button">点击弹出隐藏层2</a>
+<a href="http://baidu.com?height=300&width=300" title="add a caption to title attribute / or leave blank" class="thickbox">Scrolling content</a>  
+<a href="www.baidu.com?height=220&width=400" class="thickbox" title="add a caption to title attribute / or leave blank">No-scroll content</a>  
+<a href="index.html?height=100&width=250" class="thickbox" title="Please Sign In">login</a>
+
+<div id="myOnPageContent" style="display:none;">
+<!--  <iframe src='http://www.baidu.com' name ='wunai' width="820" height="100%" frameborder=no></iframe>
+-->
+</div>
+</body>
+</html>
