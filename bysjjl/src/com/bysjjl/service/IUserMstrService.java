@@ -10,42 +10,42 @@ public interface IUserMstrService {
 	/*
 	 * @param userName
 	 * @returnValue boolean
-	 * @describe ¼ì²éÓÃ»§ÃûÊÇ·ñÖØ¸´
+	 * @describe æ£€æŸ¥é‡å¤æ€§
 	 */
 	public boolean checkNameRepeat(String userName) throws SQLException;
 	
 	/*
 	 * @param userMstr
 	 * @returnValue UserMstr
-	 * @describe  ÓÃ»§µÇÂ¼
+	 * @describe ç™»å½•
 	 */
 	public UserMstr logon(UserMstr userMstr) throws SQLException;
 	
 	/*
 	 * @param userMstr
 	 * @returnValue UserMstr
-	 * @describe ÓÃ»§×¢²á
+	 * @describe æ³¨å†Œ
 	 */
 	public UserMstr registr(UserMstr userMstr) throws SQLException;
 	
 	/*
 	 * @param userMstr
 	 * @returnValue UserMstr
-	 * @describe  ¸üĞÂĞÅÏ¢
+	 * @describe æ›´æ–°
 	 */
 	public UserMstr update(UserMstr userMstr)throws SQLException;
 	
 	/*
 	 * @param userMstr
 	 * @returnValue UserMstr
-	 * @describe  ²éÑ¯
+	 * @describe æŸ¥æ‰¾
 	 */
 	public UserMstr search(String logonName)throws SQLException;
 	
 	/*
 	 * @param limitPower
 	 * @returnValue List<UserMstr>
-	 * @describe  ²éÑ¯
+	 * @describe  ï¿½ï¿½Ñ¯
 	 */
 	public List<UserMstr> getAll(int limitPower)throws SQLException;
 }

@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+* {padding: 0; margin: 0}
+body {margin: 3em; font: 12px Tahoma; background: #EAEAEA; color: #333333; line-height: 20px}
+input, textarea {font: 12px Tahoma; color: #666666; padding: 2px; border: solid 1px #DBDBDB}
+textarea {padding: 5px; line-height: 20px}
+.case {display: block; padding: 0 2em 2em 2em; border: solid 1px #EAEAEA; background: #FFFFFF; margin-bottom: 2em; height: 1%; overflow: hidden}
+.title {display:block; padding: .5em 2em .5em 1em; margin: 0 -2em 2em -2em; font-weight: bold; color: #000000; background: #FAFAFA; border-bottom: solid 1px #EAEAEA}

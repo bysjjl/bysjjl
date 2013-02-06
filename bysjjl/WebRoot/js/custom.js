@@ -37,7 +37,6 @@ function ready(){
 		return false;
 	});
 	
-	
 	$(".faq ul a").click(function(){
 		var index = $(".faq ul a").index($(this));
 		$('html, body').animate({scrollTop: $(".details h1").eq(index).offset().top-15}, 1500);
@@ -50,7 +49,7 @@ function ready(){
 	});
 	
 	$(".top a").click(function(){
-		$('html, body').animate({scrollTop:0}, 1500);
+		$('html, body ').animate({scrollTop:0}, 1500);
 	});
 	
 	$("[name=contactForm] .submit").click(function(){$("[name=contactForm]").submit();});

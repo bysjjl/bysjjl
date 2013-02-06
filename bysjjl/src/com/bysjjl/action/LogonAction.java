@@ -1,7 +1,7 @@
 package com.bysjjl.action;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -23,57 +23,74 @@ public class LogonAction extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		String type = (String) request.getAttribute("type");
+		String type = (String) request.getParameter("type");
 		if(type.equals("logon")){
 			logon(request,response);
 		}else if(type.equals("register")){
 			register(request,response);
 		}else if(type.equals("update")){
-			
+			update(request, response);
 		}else{
 			checkRepeat(request,response);
 		}
 	}
 	
-	// ÅĞ¶ÏÓÃ»§ÃûÊÇ·ñÖØ¸´
+	// æ£€æŸ¥ç”¨æˆ·åæ˜¯å¦é‡å¤
 	private void checkRepeat(HttpServletRequest request,
 			HttpServletResponse response) {
 		
 	}
 
-	// ÓÃ»§µÇÂ¼
+	// ç™»å½•æ“ä½œ
 	private void logon(HttpServletRequest request, HttpServletResponse response){
 		userMstrService = new UserMstrService();
 		UserMstr userMstr = (UserMstr)request.getAttribute("user");
 		try {
 			if(userMstrService.logon(userMstr) != null){
-				// µÇÂ¼³É¹¦
+				// ç™»å½•æˆåŠŸ
 			}else{
-				// µÇÂ¼²»³É¹¦
+				// ç™»å½•å¤±è´¥
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
-	// ÓÃ»§×¢²á
-	private void register(HttpServletRequest request, HttpServletResponse response){
+	// æ³¨å†Œæ“ä½œ
+	private void register(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException{
 		userMstrService = new UserMstrService();
-		UserMstr userMstr = (UserMstr)request.getAttribute("user");
+		UserMstr userMstr = new UserMstr();
+		String logonName = request.getParameter("logonName");
+		String pword = request.getParameter("pword");
+		String realName = request.getParameter("realName");
+		String email = request.getParameter("email");
+		String phone = request.getParameter("phone");
+		String qqNum = request.getParameter("qqNum");
+		userMstr.setLogonName(logonName);
+		userMstr.setPword(pword);
+		userMstr.setRealName(realName);
+		userMstr.setEmail(email);
+		userMstr.setPhoneNo(phone);
+		userMstr.setQqNo(qqNum);
+		userMstr.setLimitPower(9);
+		System.out.println("ç¼–ç æ–¹å¼"+request.getCharacterEncoding());
+		System.out.println("--------çœŸå®å§“åï¼š-------"+realName);
 		try {
 			if(userMstrService.registr(userMstr) != null){
-				// ×¢²á³É¹¦
+				try {
+					response.sendRedirect("/index.html");
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}else{
-				// ×¢²áÊ§°Ü
+				System.out.println("æ³¨å†Œå¤±è´¥");
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
-	// ĞŞ¸ÄĞÅÏ¢
+	//	æ›´æ–°æ“ä½œ
 	private void update(HttpServletRequest request, HttpServletResponse response){
 		
 	}

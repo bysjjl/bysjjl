@@ -4,16 +4,16 @@ import java.sql.Timestamp;
 
 //  table userMstr
 public class UserMstr {
-	private Integer id; // ×Ô¶¯Ôö³¤Id
-	private String logonName; // ÓÃ»§µÇÂ¼Ãû
-	private String pword; // µÇÂ¼ÃÜÂë
-	private int limitPower; // µÇÂ¼È¨ÏŞ0-9Öğ´ÎËõĞ¡
-	private String realName; // ÓÃ»§µÄÕæÊµĞÕÃû£¨Îª±ØÌîÏî£©
-	private String phoneNo; // ÓÃ»§ÊÖ»úºÅÂë
-	private String email; // ÓÃ»§µç×ÓÓÊÏä
-	private char type; // £¨a-z£©Ó¢ÎÄ×ÖÄ¸£¨ÔİÊ±²»ÓÃ£©
-	private String qqNo; // qqÕËºÅ
-	private Timestamp regisTime; // ×¢²áÊ±¼ä
+	private Integer id; //	è‡ªåŠ¨ç”Ÿæˆid
+	private String logonName; // ç”¨æˆ·ç™»å½•å
+	private String pword; // å¯†ç 
+	private int limitPower; // æƒé™çº§åˆ«0-9ä¾æ¬¡é€’å‡
+	private String realName; // çœŸå®å§“åî£©
+	private String phoneNo; //	æ‰‹æœºå·ç 
+	private String email; // 	ç”µå­é‚®ä»¶
+	private char type; // ç±»å‹a-z æš‚æ—¶æ— ç”¨
+	private String qqNo; // qqå·ç 
+	private Timestamp regisTime; // æ³¨å†Œæ—¶é—´
 	
 	public Integer getId() {
 		return id;

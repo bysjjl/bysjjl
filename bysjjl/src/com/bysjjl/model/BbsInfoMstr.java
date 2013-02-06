@@ -3,13 +3,13 @@ package com.bysjjl.model;
 import java.sql.Timestamp;
 
 public class BbsInfoMstr {
-	private int id;  // ×Ô¶¯Ôö³¤
-	private int parentId; // ¿Õ£ºÖ÷Ìù     
-	private String logonName; //  ·¢ÌûÓÃ»§
-	private String title;	//  Ö÷ÌùµÄtitle
-	private String content; // ÄÚÈİ
-	private int type;	// ·¢ÌûÀàĞÍ0- webÓ¦ÓÃ£¬1-ÒÆ¶¯¿ª·¢ £¬2-Ëã·¨Éè¼Æ
-	private Timestamp comtime; // Ìá½»µÄÊ±¼ä
+	private int id;  // è‡ªåŠ¨ç”Ÿæˆid
+	private int parentId; // ä¸»è´´     
+	private String logonName; // å‘å¸–äºº
+	private String title;	// æ ‡é¢˜
+	private String content; // å†…åŒ
+	private int type;	// è´´çš„æ€§è´¨0- webå¼€å‘-ç§»åŠ¨å¼€å‘2-ç®—æ³•è®¾è®¡3
+	private Timestamp comtime; // å‘å¸–æ—¶é—´
 	
 	public int getId() {
 		return id;

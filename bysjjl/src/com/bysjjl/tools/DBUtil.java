@@ -14,18 +14,18 @@ import java.util.Properties;
 public class DBUtil {
 	private static DBUtil dbUtil = new DBUtil();
 	private static Connection conn = null;
-	private final static String FILEPATH = "src/jdbc.properties";
+	private final static String FILEPATH = "jdbc.properties";
 	public static DBUtil getInstance(){
 		return dbUtil;
 	}
 
-	// ¶ÁÈ¡ÅäÖÃÎÄ¼ş
+	// è·å–é…ç½®æ–‡ä»¶
 	private static String[] getConifg() {
 		String[] config = new String[4];
 		InputStream ins = null;
-		// ¼ÓÔØÅäÖÃÎÄ¼şÎÄ¼ş
+		// è¯»å–é…ç½®æ–‡ä»¶
 		try {
-			ins = new FileInputStream(FILEPATH);
+			ins = DBUtil.class.getResourceAsStream(FILEPATH);
 			Properties property = new Properties();
 			property.load(ins);
 			config[0] = property.getProperty("jdbc.driverClassName");
@@ -48,7 +48,7 @@ public class DBUtil {
 		return config;
 	}
 	 
-	// »ñµÃÁ¬½Ó
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static Connection getConnection(){
 		String[]config = getConifg();
 		try {
@@ -62,7 +62,7 @@ public class DBUtil {
 		return conn;
 	}
 	
-	// ¹Ø±ÕÁ¬½Ó
+	// ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static void close(){
 		if(conn != null){
 			try {

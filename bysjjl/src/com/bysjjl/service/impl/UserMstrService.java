@@ -21,7 +21,7 @@ public class UserMstrService implements IUserMstrService {
 		ResultSet rs = statement.executeQuery();
 		rs.next();
 		int count = rs.getInt(1);
-		// ¹Ø±ÕÁ¬½Ó
+		// å…³é—­
 		rs.close();
 		statement.close();
 		DBUtil.close();
