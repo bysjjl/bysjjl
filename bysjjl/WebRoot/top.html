@@ -24,12 +24,13 @@
 <div id="b" style="clear: both">
 <!--导航菜单 -->
 	<div id="header">
-		<div style="float:left;color:#F9630D;vertical-align:middle;float:left"><a target="_blank" href="www.bysjjl.com" class="logo"><img src="images/logo.png" alt="毕业设计交流"/></a>
+		<div style="color:#F9630D;vertical-align:middle;float:left"><a target="_blank" href="www.bysjjl.com" class="logo"><img src="images/logo.png" alt="毕业设计交流"/></a>
 		</div>
 			<!-- 登录 -->	
 		<div style="float:left;padding-top:20px;padding-bottom:20px;text-align:center;">
 		<a href="www.bysjjl.com">毕业设计交流网</a><br /><a href="www.bysjjl.com">www.bysjjl.com</a>
 		</div>
+		<iframe width="420"  style="margin-top:8px;margin-left:50px;" scrolling="no" height="70" frameborder="0" allowtransparency="true" src="http://www.tianqi.com/index.php?c=code&id=12&icon=1&num=1"></iframe>
 		<div style="float:right;padding-top:20px;padding-bottom:20px;">
 	    <form method="post" autocomplete="off"
 			action="member.php?mod=logging&amp;action=login&amp;loginsubmit=yes&amp;infloat=yes&amp;lssubmit=yes"
@@ -49,15 +50,15 @@
         <ul class="menu">
             <li class="no_sub"><a target="_blank" href="#" class="tablink nosub">首 页</a></li>
             <li>
-            	<a target="_blank" href="#" class="tablink">讨论区</a>
+            	<a href="diszz.jsp" class="tablink">讨论区</a>
                 <ul>
-                    <li><a target="_blank" href="#">web开发</a></li>
-                    <li><a target="_blank" href="#">移动开发</a></li>
-                    <li><a target="_blank" href="#">算法研究</a></li>
+                    <li><a target="diszz.jsp?type=1" href="#">web开发</a></li>
+                    <li><a target="diszz.jsp?type=2" href="#">移动开发</a></li>
+                    <li><a target="diszz.jsp?type=3" href="#">算法研究</a></li>
                 </ul>
             </li>
             <li>
-            	<a target="_blank" href="#" class="tablink">IT新闻区</a>
+            	<a href="news.jsp" class="tablink">IT新闻区</a>
                 <ul>
                     <li><a target="_blank" href="#">新技术</a></li>
                     <li><a target="_blank" href="#">新应用</a></li>
@@ -65,7 +66,7 @@
                 </ul>
             </li>
             <li>
-            	<a href="#">招聘信息</a>
+            	<a href="job.jsp">招聘信息</a>
                 <ul>
                     <li><a target="_blank" href="http://www.lanrentuku.com/js/jiaodiantu.html">游戏类</a></li>
 					<li><a target="_blank" href="http://www.lanrentuku.com/js/quanping.html">综合类</a></li>
@@ -74,16 +75,19 @@
                 <div class="hot"></div>
             </li>
             <li>
-            	<a target="_blank" href="http://www.lanrentuku.com/psd/" class="tablink">IT导航</a>
+            	<a target="_blank" href="bar.jsp" class="tablink">IT导航</a>
                 <ul>
-                    <li><a target="_blank" href="http://www.lanrentuku.com/psd/sheji/">IT巨头</a></li>
-		            <li><a target="_blank" href="http://www.lanrentuku.com/psd/wangye/">IT论坛</a></li>
-		            <li><a target="_blank" href="http://www.lanrentuku.com/psd/anniu/">IT开源</a></li>
+                    <li><a target="_blank" href="#">IT巨头</a></li>
+		            <li><a target="_blank" href="#">IT论坛</a></li>
+		            <li><a target="_blank" href="#">IT开源</a></li>
                 </ul>
             </li>
-            <li class="no_sub">
-            	<a target="_blank" href="#" class="tablink nosub">个人信息管理</a>
-            </li>
+            
+            <div style="float:right;clear:right;">
+            <form action="">
+         	<input type="text" style="height:25px;width: 300px">&nbsp; &nbsp;&nbsp;<input type="submit" value="查找" style="height:25px;width:40px">
+         	</form>
+            </div> 
         </ul>
     </div>
 </div>

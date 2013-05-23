@@ -40,7 +40,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<br />
 		qq号码：
 		<input type="text" name="qqNum">
-		<br>
+		<br><img id="imgValidateCode" src="image.jsp" width="55" height="20" align="top" border="0" style="cursor:hand" onclick="this.src='image.jsp'"/>
+		<br/>
         <input type="submit" value="登录">
 		</form>
 	</body>

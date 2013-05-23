@@ -70,5 +70,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div>
   </div>
   </div>
+  <jsp:include page="tail.html"></jsp:include>
   </body>
 </html>

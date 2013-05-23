@@ -25,7 +25,7 @@ p{line-height:26px}
 #header .logo img{width:64px;height:64px;}
 
 /*µ¼º½*/
-.menu{height:32px;font-family:"Microsoft Yahei",Tahoma, Geneva, sans-serif;padding-left:15px;_overflow:hidden}
+.menu{height:40px;font-family:"Microsoft Yahei",Tahoma, Geneva, sans-serif;padding-left:15px;_overflow:hidden;border:1px solid #629d2a;}
 .menu a{height:16px;line-height:16px;float:left;position:relative;}
 .top{position:relative;z-index:2}
 .menu li{font-size:14px;float:left;position:relative;padding:8px 12px;}

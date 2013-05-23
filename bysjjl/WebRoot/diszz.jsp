@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    <title>IT新闻</title>
+    <title>讨论区</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -59,17 +59,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </div>
  </div>
   <div class ="alldiszz" style="clear:left;width: 980px;margin-top: 10px">
-  <div class="javaWeb" style="border:1px solid blue; float:left;width: 980px">
+  <div class="javaWeb" style="border:1px solid blue; float:left;width: 980px;padding-bottom: 15px">
   <div class="javaweb" style="height:20px;border:1px solid blue;">
-   web 技术交流
+   毕业设计材料交流
   </div>
   	<div style="clear:left;float:left;padding-left:10px;padding-top:20px;width: 32%">
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
-	  	<dt>SSH框架交流</dt>
+	  	<dt>选题交流</dt>
 	  	</dl>
 	  	</div>
   	</div>
@@ -78,9 +78,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
-	  	<dt>java技术交流</dt>
+	  	<dt>开题报告交流</dt>
 	  	</dl>
 	  	</div>
   	</div>
@@ -89,7 +89,57 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
+	  	<dl>
+	  	<dt>任务书交流</dt>
+	  	</dl>
+	  	</div>
+  	</div>
+  	
+  	<div style="float:left;padding-left: 10px;padding-top:20px;width: 32%">
+	  	<div style="clear:left;float:left">
+	  	<img src="images/forum_new.gif"/>
+	  	</div>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
+	  	<dl>
+	  	<dt>论文交流</dt>
+	  	</dl>
+	  	</div>
+  	</div>
+  	
+  	<div style="float:left;padding-left: 10px;padding-top:20px;width: 32%">
+	  	<div style="clear:left;float:left">
+	  	<img src="images/forum_new.gif"/>
+	  	</div>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
+	  	<dl>
+	  	<dt>答辩交流</dt>
+	  	</dl>
+	  	</div>
+  	</div>
+  </div>
+  
+  <!--Web技术交流  -->
+   <div class="moblie" style="border:1px solid blue; float:left;width:980px; padding-bottom: 15px">
+  <div class="moblie" style="height:20px;border:1px solid blue;">
+   	Web技术交流
+  </div>
+  	<div style="clear:left;float:left;padding-left:10px;padding-top:20px;width: 32%">
+	  	<div style="clear:left;float:left">
+	  	<img src="images/forum_new.gif"/>
+	  	</div>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
+	  	<dl>
+	  	<dt>JavaWeb技术</dt>
+	  	</dl>
+	  	</div>
+  	</div>
+  	
+  	<div style="float:left;padding-left: 10px;padding-top:20px;width: 32%">
+	  	<div style="clear:left;float:left">
+	  	<img src="images/forum_new.gif"/>
+	  	</div>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
 	  	<dt>php技术交流</dt>
 	  	</dl>
@@ -100,48 +150,36 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
-	  	<dt>.NET平台技术交流</dt>
+	  	<dt>.NET平台技术</dt>
 	  	</dl>
 	  	</div>
   	</div>
-  	
-  	<div style="float:left;padding-left: 10px;padding-top:20px;width: 32%">
+ 	<div style="float:left;padding-left: 10px;padding-top:20px;width: 32%">
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
-	  	<dt>IbatiS框架交流</dt>
+	  	<dt>其他技术</dt>
 	  	</dl>
 	  	</div>
-  	</div>
-  	
-  	<div style="float:left;padding-left: 10px;padding-top:20px;width: 32%">
-	  	<div style="clear:left;float:left">
-	  	<img src="images/forum_new.gif"/>
-	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
-	  	<dl>
-	  	<dt>JSF框架交流</dt>
-	  	</dl>
-	  	</div>
-  	</div>
   </div>
-  
-  <!--移动开发  -->
-   <div class="moblie" style="border:1px solid blue; float:left;width: 980px">
+  </div>
+  <!-- Web技术交流 到此结束 -->
+<!-- 毕业设计材料交流 -->
+  <div class="moblie" style="border:1px solid blue; float:left;width: 980px;padding-bottom: 15px">
   <div class="moblie" style="height:20px;border:1px solid blue;">
    	移动开发技术交流
   </div>
   	<div style="clear:left;float:left;padding-left:10px;padding-top:20px;width: 32%">
-	  	<div style="clear:left;float:left">
+	  	<div style="clear:left;float:left;">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
-	  	<dt>android技术交流</dt>
+	  	<dt><a href="#">android技术交流(10)</a></dt>
 	  	</dl>
 	  	</div>
   	</div>
@@ -150,7 +188,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;;padding-top:5px">
 	  	<dl>
 	  	<dt>ios技术交流</dt>
 	  	</dl>
@@ -161,17 +199,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
 	  	<dt>html5技术交流</dt>
 	  	</dl>
 	  	</div>
   	</div>
   	
-  </div>
-  <!-- 移动开发到此结束 -->
+  </div> 
+<!-- 毕业设计材料交流结束 -->
   
-  <div class="arithmetic" style="border:1px solid blue; float:left;width: 980px">
+  <div class="arithmetic" style="border:1px solid blue; float:left;width: 980px;padding-bottom: 15px">
   <div class="arithmetic" style="height:20px;border:1px solid blue;">
    	算法交流
   </div>
@@ -179,7 +217,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
 	  	<dt>c/c++语言技术交流</dt>
 	  	</dl>
@@ -190,7 +228,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
 	  	<dt>图像处理技术</dt>
 	  	</dl>
@@ -201,7 +239,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  	<div style="clear:left;float:left">
 	  	<img src="images/forum_new.gif"/>
 	  	</div>
-	  	<div style="float:left;margin-left: 8px";>
+	  	<div style="float:left;margin-left: 8px;padding-top:5px">
 	  	<dl>
 	  	<dt>其他</dt>
 	  	</dl>
@@ -214,8 +252,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	
   </div>
   <div style="clear:left;padding-top:20px;width: 980px;padding-left: 30px">
+  关键字：
       <a href="#">毕设流程</a> &nbsp;&nbsp; &nbsp;<a href="#">java技术</a> &nbsp;&nbsp; &nbsp; 
       <a href="#">web技术</a> &nbsp;&nbsp; &nbsp; <a href="#">移动开发</a> &nbsp;&nbsp; &nbsp; <a href="#">算法讨论</a> 
   </div>
+  <jsp:include page="tail.html"></jsp:include>
   </body>
 </html>

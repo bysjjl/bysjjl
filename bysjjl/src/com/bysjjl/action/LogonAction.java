@@ -45,6 +45,16 @@ public class LogonAction extends HttpServlet {
 	private void logon(HttpServletRequest request, HttpServletResponse response){
 		userMstrService = new UserMstrService();
 		UserMstr userMstr = (UserMstr)request.getAttribute("user");
+		//先验证验证码
+//		String ccode=(String)request.getSession().getAttribute("ccode");
+//		String checkcode=userForm.getValidateCode();
+//		if(!(ccode.equals(checkcode))){
+//			ActionMessages errors = new ActionMessages();
+//			errors.add("checkcode", new ActionMessage("checkcode.error"));
+//			super.saveErrors(request, errors);
+//			//request.setAttribute("validateerror", "validatecodeerror");
+//			return mapping.findForward("fail");
+//		}
 		try {
 			if(userMstrService.logon(userMstr) != null){
 				// 登录成功
